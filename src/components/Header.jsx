@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div className={styles.profile}>
           <img src={UserAvatar} alt="User Avatar" className={styles.avatar} />
-          <span className={styles.userName}>Dr. Kevin</span>
+          <span className={styles.userName}>Santhosh</span>
         </div>
       </div>
     </header>
