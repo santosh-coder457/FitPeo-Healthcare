@@ -1,3 +1,5 @@
+# FitPeo Tech Pvt. Ltd
+## Assignment
 # React Healthcare Dashboard
 
 A responsive and modern Healthcare Dashboard UI built with React.js and Vite, showcasing a patient's health overview, calendar, upcoming schedule, and activity feed.
