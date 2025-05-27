@@ -1,12 +1,41 @@
-# React + Vite
+# React Healthcare Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern Healthcare Dashboard UI built with React.js and Vite, showcasing a patient's health overview, calendar, upcoming schedule, and activity feed.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Mock Data](#mock-data)
+- [Styling](#styling)
+- [Responsiveness](#responsiveness)
+- [Learnings/Notes](#learningsnotes)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Dashboard Overview:** Visual representation of patient health status using an interactive human body diagram and health status cards.
+* **Calendar View:** Displays monthly appointments with visual indicators for scheduled days.
+* **Upcoming Schedule:** Lists detailed upcoming appointments.
+* **Activity Feed:** A simple bar chart visualizing daily activity or appointments.
+* **Responsive Design:** Adapts to various screen sizes (desktop, tablet, mobile).
+* **Modular Components:** Organized into reusable React components.
+* **Mock Data:** Uses local mock data for demonstration purposes.
+* **Modern UI:** Clean and intuitive design based on the provided wireframe.
+
+## Technologies Used
+
+* **React.js:** A JavaScript library for building user interfaces.
+* **Vite:** A fast build tool that provides a lightning-fast development experience.
+* **CSS Modules:** For scoped component-specific styling, preventing style conflicts.
+* **JavaScript (ES6+)**
+
+## Project Structure
+
+The project follows a component-based architecture for better organization and maintainability.
