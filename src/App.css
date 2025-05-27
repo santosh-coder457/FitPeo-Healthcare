@@ -1,0 +1,27 @@
+/* 
+/* src/App.css */
+@import './styles/base.css'; /* Import your base styles */
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background-light);
+  overflow: hidden; /* Prevent body scroll if content overflows */
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden; /* Allow main content area to scroll, not the entire app */
+}
+
+/* Responsiveness for App.js layout */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column; /* Stack sidebar and main content */
+  }
+  .main-layout {
+    width: 100%; /* Take full width when stacked */
+  }
+}

@@ -1,0 +1,63 @@
+/* src/styles/DashboardMainContent.module.css */
+.container {
+  flex-grow: 1;
+  padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) var(--spacing-lg);
+  overflow-y: auto; /* Enable scrolling for main content */
+}
+
+.dashboardTitle {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-xl);
+}
+
+.bottomSection {
+  display: flex;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap; /* Allow wrapping of calendar and right column */
+}
+
+.bottomSection > *:first-child {
+  flex: 2; /* Calendar takes more space */
+  min-width: 450px; /* Minimum width for calendar */
+}
+
+.rightColumn {
+  flex: 1; /* Right column takes remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  min-width: 300px; /* Minimum width for right column */
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding: var(--spacing-lg);
+  }
+  .dashboardTitle {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  .bottomSection {
+    flex-direction: column; /* Stack calendar and right column */
+    gap: var(--spacing-lg);
+    align-items: center; /* Center items when stacked */
+  }
+  .bottomSection > *, .rightColumn {
+    flex: none; /* Remove flex basis */
+    width: 100%; /* Take full width */
+    max-width: 800px; /* Limit overall width */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-md);
+  }
+  .dashboardTitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+  }
+}

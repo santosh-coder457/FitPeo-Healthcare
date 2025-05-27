@@ -1,0 +1,93 @@
+/* src/styles/ActivityFeed.module.css */
+.container {
+  background-color: var(--card-background);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl); /* Add margin below */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--spacing-md);
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.appointmentCount {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+}
+
+.chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100px; /* Fixed height for the chart area */
+  padding-top: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.barWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end; /* Align bars to the bottom */
+}
+
+.bar {
+  width: 12px; /* Width of each bar */
+  background-color: var(--primary-blue);
+  border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+  margin-bottom: var(--spacing-xs);
+}
+
+.dayLabel {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+}
+
+.detailsLink {
+  text-align: right;
+}
+
+.detailsLink a {
+  color: var(--primary-blue);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-md);
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  .title {
+    font-size: var(--font-size-md);
+  }
+  .appointmentCount {
+    font-size: 0.7rem;
+  }
+  .chart {
+    height: 80px;
+  }
+  .bar {
+    width: 8px;
+  }
+  .dayLabel {
+    font-size: 0.7rem;
+  }
+}

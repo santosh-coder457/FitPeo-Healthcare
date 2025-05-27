@@ -1,0 +1,60 @@
+/* src/styles/SimpleAppointmentCard.module.css */
+.card {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  box-shadow: var(--shadow-light);
+  gap: var(--spacing-md);
+}
+
+.icon {
+  font-size: 1.5rem; /* Adjust as needed */
+  color: var(--primary-blue);
+  background-color: var(--secondary-blue);
+  border-radius: 50%;
+  padding: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Fixed size for icons */
+  height: 40px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: var(--font-size-md);
+}
+
+.time {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: var(--font-size-sm);
+  }
+  .time {
+    font-size: 0.7rem; /* Define if needed */
+  }
+}

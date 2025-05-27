@@ -1,0 +1,63 @@
+/* src/styles/base.css */
+:root {
+  /* Colors */
+  --primary-blue: #007bff;
+  --secondary-blue: #e0f2ff;
+  --text-dark: #333;
+  --text-light: #666;
+  --border-light: #ddd;
+  --background-light: #f8f9fa;
+  --card-background: #fff;
+  --green-healthy: #28a745;
+  --red-issue: #dc3545;
+  --orange-warning: #ffc107;
+  --gray-medium: #ccc;
+  --gray-dark: #999;
+  --calendar-date-bg: #f0f8ff;
+  --calendar-date-border: #d0e0ff;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Font Sizes */
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-heading: 1.5rem;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

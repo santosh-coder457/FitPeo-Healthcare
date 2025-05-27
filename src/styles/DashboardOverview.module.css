@@ -1,0 +1,37 @@
+/* src/styles/DashboardOverview.module.css */
+.container {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl); /* Margin below this section */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Specific flex basis for desktop layout */
+.container > *:first-child {
+  flex: 3; /* AnatomySection takes more space */
+}
+
+.container > *:last-child {
+  flex: 1.5; /* HealthStatusCards */
+  min-width: 280px; /* Prevent cards from becoming too narrow */
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack components */
+    align-items: center; /* Center items when stacked */
+  }
+  .container > *:first-child,
+  .container > *:last-child {
+    flex: none; /* Remove flex basis */
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Limit overall width */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: var(--spacing-lg);
+  }
+}
